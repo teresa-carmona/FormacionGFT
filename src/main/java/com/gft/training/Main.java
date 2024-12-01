@@ -5,8 +5,6 @@ import com.gft.training.model.User;
 import com.gft.training.service.UserService;
 import com.gft.training.exception.*;
 
-import io.javalin.Javalin;
-import com.google.gson.Gson;
 
 public class Main {
     private static Scanner scanner = new Scanner(System.in);
@@ -21,8 +19,7 @@ public class Main {
             System.out.println("2. Search by user ID");
             System.out.println("3. List all users");
           System.out.println("4. Delete user");
-          System.out.println("5. Init API");
-            System.out.println("6. Exit");
+            System.out.println("5. Exit");
             System.out.print("Select your option: ");
 
             int option = scanner.nextInt();
@@ -41,10 +38,7 @@ public class Main {
               case 4:
                 deleteUser(userService);
                 break;
-              case 5:
-                initApi(userService);
-                break;
-                case 6:
+                case 5:
                     System.out.println("\nBye!");
                     return;
                 default:
@@ -98,13 +92,13 @@ public class Main {
 	}
   }
 
-  private static void initApi(UserService userService) {
-    System.out.println("\nAPI initialized");
+  // private static void initApi(UserService userService) {
+  //   System.out.println("\nAPI initialized");
 
-    Javalin app = Javalin.create().start(7000);
+  //   Javalin app = Javalin.create().start(7000);
 
-    app.get("/users", ctx -> {
-        ctx.json(userService.getAllUsers());
-    });
-  }
+  //   app.get("/users", ctx -> {
+  //       ctx.json(userService.getAllUsers());
+  //   });
+  // }
 }
