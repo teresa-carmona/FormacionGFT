@@ -1,0 +1,6 @@
+/home/runner/FormacionGFT/src/main/java/com/gft/training/exception/UserValidationException.java
+/home/runner/FormacionGFT/src/main/java/com/gft/training/model/User.java
+/home/runner/FormacionGFT/src/main/java/com/gft/training/service/UserService.java
+/home/runner/FormacionGFT/src/main/java/com/gft/training/repository/LocalRepository.java
+/home/runner/FormacionGFT/src/main/java/com/gft/training/exception/NoUserException.java
+/home/runner/FormacionGFT/src/main/java/com/gft/training/Main.java

@@ -1,0 +1,6 @@
+com/gft/training/model/User.class
+com/gft/training/repository/LocalRepository.class
+com/gft/training/Main.class
+com/gft/training/service/UserService.class
+com/gft/training/exception/UserValidationException.class
+com/gft/training/exception/NoUserException.class
